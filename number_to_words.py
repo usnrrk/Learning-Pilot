@@ -1,18 +1,52 @@
 """Convert numerals (including real numbers) to their English text equivalent."""
 
 DIGIT_WORDS = [
-    "zero", "one", "two", "three", "four", "five",
-    "six", "seven", "eight", "nine",
+    "zero",
+    "one",
+    "two",
+    "three",
+    "four",
+    "five",
+    "six",
+    "seven",
+    "eight",
+    "nine",
 ]
 
 ONES = [
-    "", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
-    "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen",
-    "seventeen", "eighteen", "nineteen",
+    "",
+    "one",
+    "two",
+    "three",
+    "four",
+    "five",
+    "six",
+    "seven",
+    "eight",
+    "nine",
+    "ten",
+    "eleven",
+    "twelve",
+    "thirteen",
+    "fourteen",
+    "fifteen",
+    "sixteen",
+    "seventeen",
+    "eighteen",
+    "nineteen",
 ]
 
 TENS = [
-    "", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety",
+    "",
+    "",
+    "twenty",
+    "thirty",
+    "forty",
+    "fifty",
+    "sixty",
+    "seventy",
+    "eighty",
+    "ninety",
 ]
 
 SCALES = [
@@ -71,7 +105,6 @@ def real_number_to_words(text: str) -> str:
 
     if negative and (int_value != 0 or frac_part):
         result = "negative " + result
-
     return result
 
 
